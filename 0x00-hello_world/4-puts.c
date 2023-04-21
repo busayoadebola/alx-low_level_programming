@@ -2,7 +2,7 @@
 #include <string.h>
 /**
  * main - This is a program that prints out a string using the puts function
- * Return : 0 (correct)
+ * Return: 0 (correct)
  */
 int main(void)
 {
