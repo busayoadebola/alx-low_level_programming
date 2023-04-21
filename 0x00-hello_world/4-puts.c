@@ -1,2 +1,12 @@
-#!/bin/bash
-puts("Programming is like building a multilingual puzzle");
+#include <stdio.h>
+#include <string.h>
+/**
+ * main - This is a program that prints out a string using the puts function
+ * Return : 0
+ */
+int main(){
+	char str1[] = "Programming is like building a multilingual puzzle";
+	puts(str1);
+	
+	return 0;
+}
