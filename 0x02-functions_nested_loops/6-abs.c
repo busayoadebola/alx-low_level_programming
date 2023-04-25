@@ -11,9 +11,12 @@
 
 int _abs(int b)
 {
-	int a;
-
-	a = abs(b);
-	_putchar(a+48);
-	return (0);
+	if (b >= 0)
+	{
+		return (b);
+	}
+	else
+	{
+		return (-b);
+	}
 }
