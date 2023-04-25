@@ -9,6 +9,6 @@
 
 int main(void)
 {
-	write(2, "\_putchar\n", 11);
+	write(1, "_putchar\n", 11);
 	return (0);
 }
