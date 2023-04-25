@@ -14,6 +14,6 @@ int _abs(int b)
 	int a;
 
 	a = abs(b);
-	_putchar(a);
+	_putchar(a+48);
 	return (0);
 }
