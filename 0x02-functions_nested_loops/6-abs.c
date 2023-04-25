@@ -4,7 +4,7 @@
 
 /**
  * _abs - A function to print the absolute value of integers
- * @int: is used to declare numerous variables
+ * @b: is used to declare numerous variables
  *
  * Return: 0 correct
  */
