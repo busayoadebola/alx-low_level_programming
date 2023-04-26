@@ -9,7 +9,7 @@
 int main(void)
 {
 	int c = 1;
-	unsigned long int n1 = 1, n2 = 2, n3, n;
+	unsigned long int n1 = 1, n2 = 2, n3, n = 0;
 
 	while (c <= 33)
 	{
