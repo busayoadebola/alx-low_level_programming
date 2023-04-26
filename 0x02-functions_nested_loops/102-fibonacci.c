@@ -13,7 +13,7 @@ int main(void)
 	while (c < 50)
 	{
 		n =  n1 + n2;
-		printf("%u", n);
+		printf("%lu", n);
 
 		n1 = n2;
 		n2 = n;
