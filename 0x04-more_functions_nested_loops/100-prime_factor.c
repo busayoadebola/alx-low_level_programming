@@ -9,7 +9,7 @@
 
 int main(void)
 {
-	long long int a;
+	long int a;
 	long int large;
 	long int b;
 
