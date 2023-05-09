@@ -17,7 +17,7 @@ char *_strpbrk(char *s, char *accept)
 		for (n = 0; accept[n]; n++)
 		{
 		if (*s == accept[n])
-		eturn (s);
+		return (s);
 		}
 		s++;
 	}
