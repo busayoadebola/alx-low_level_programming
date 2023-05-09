@@ -5,18 +5,21 @@
  * @s: string to search
  * @accept: what to search for
  *
- * Return: o correct
+ * Return: 0 correct
  */
 
 char *_strpbrk(char *s, char *accept)
 {
-	int i = 0;
+	int n;
 
-	while (s[i] >= '\0')
+	while (s[n] >= '\0')
 	{
-		if (s[i] == accept[i])
-			return (&s[i - 1]);
-		i++;
+		for (n = 0; accept[n]; n++)
+		{
+			if (*s == accept[n])
+				return (s);
+		}
+		s++;
 	}
 	return (0);
 }
