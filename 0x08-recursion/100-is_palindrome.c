@@ -14,7 +14,7 @@ int is_palindrome(char *s)
 
 	if (n == 0)
 		return (1);
-	return palind(s, 0, n - 1);
+	return (palind(s, 0, n - 1));
 }
 
 /**
