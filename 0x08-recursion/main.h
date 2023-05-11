@@ -15,5 +15,5 @@ int sqroot(int n, int i);
 int prime(int n, int i);
 int is_palindrome(char *s);
 int wildcmp(char *s1, char *s2);
-
+int palind(char *s, int str, int e);
 #endif /* MAIN_H */
