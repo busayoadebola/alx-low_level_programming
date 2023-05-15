@@ -7,13 +7,13 @@
  * Return: 0 correct
  */
 
-int main(int argc, char *argv[])
+int main(int argc __attribute__((unused)), char *argv[])
 {
 	int i;
 
 	for (i = 0; i < argc; i++)
 	{
-		printf("argv[%d] = %s\n", i, argv[i]);
+		printf("%s\n", argv[i]);
 	}
 
 	return (0);
