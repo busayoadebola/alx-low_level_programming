@@ -28,15 +28,15 @@ int convert(char *str)
 
 int main(int argc, char *argv[])
 {
-	int a = convert(argv[1]);
-	int b = convert(argv[2]);
-	int mul;
+	int a, b, mul;
 
 	if (argc < 3 || argc > 3)
 	{
 		printf("error\n");
 		return (1);
 	}
+	a = convert(argv[1]);
+	b = convert(argv[2]);
 	mul = a * b;
 	printf("%d\n", mul);
 	return (0);
