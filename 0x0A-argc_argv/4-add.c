@@ -45,7 +45,7 @@ int main(int argc, char *argv[])
 		if (num_status(argv[i]))
 		{
 			type_change = atoi(argv[i]);
-			sum = type_change + 1;
+			sum += type_change;
 		}
 		else
 		{
