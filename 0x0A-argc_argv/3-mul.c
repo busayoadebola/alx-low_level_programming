@@ -1,22 +1,43 @@
 #include "main.h"
 
 /**
- * convert - to convert a string to integer
+ * _atoi - to convert a string to integer
  * @str: the string to convert
  *
  * Return: num
  */
 
-int convert(char *str)
+int _atoi(char *s)
 {
-	int num = 0;
-	int i;
+	int a, b, n, len, f, digit;
 
-	for (i = 0; str[i] != '\0'; i++)
+	a = b = n = len = f = digit = 0;
+
+	while (s[len] != '\0')
+		len++;
+
+	for (; a < len && f == 0; a++)
 	{
-		num = num * 10 + (str[i] - 48);
+		if (s[a] == '-')
+			++b;
+
+		if (s[a] >= '0' && s[a] <= '9')
+		{
+			digit = s[a] - '0';
+			if (b % 2)
+				digit = -digit;
+			n = n * 10 + digit;
+			f = 1;
+			if (s[a + 1] < '0' || s[a + 1] > '9')
+				break;
+			f = 0;
+		}
 	}
-	return (num);
+
+	if (f == 0)
+		return (0);
+
+	return (n);
 }
 
 /**
@@ -32,11 +53,11 @@ int main(int argc, char *argv[])
 
 	if (argc < 3 || argc > 3)
 	{
-		printf("error\n");
+		printf("Error\n");
 		return (1);
 	}
-	a = convert(argv[1]);
-	b = convert(argv[2]);
+	a = _atoi(argv[1]);
+	b = _atoi(argv[2]);
 	mul = a * b;
 	printf("%d\n", mul);
 	return (0);
