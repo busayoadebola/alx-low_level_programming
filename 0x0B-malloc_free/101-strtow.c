@@ -38,11 +38,9 @@ char **strtow(char *str)
 
 	while (*(str + len))
 		len++;
-
 	words = word_count(str);
 	if (words == 0)
 		return (NULL);
-
 	arr = (char **) malloc(sizeof(char *) * (words + 1));
 	if (arr == NULL)
 		return (NULL);
@@ -51,6 +49,7 @@ char **strtow(char *str)
 	while (i <= len)
 	{
 		if (str[i] == ' ' || str[i] == '\0')
+		{
 			if (c)
 			{
 				end = i;
@@ -65,6 +64,7 @@ char **strtow(char *str)
 				k++;
 				c = 0;
 			}
+		}
 		else if (c++ == 0)
 			start = i;
 
