@@ -3,7 +3,7 @@
 #include "3-calc.h"
 
 /**
- * @op_add - to add 2 numbers
+ * op_add - to add 2 numbers
  * @a: the first number
  * @b: the second number
  * Return: the sum
