@@ -13,10 +13,10 @@ int append_text_to_file(const char *filename, char *text_content)
 {
 	int open_file, write_file, len;
 
-	if (!filename)
+	if (filename == NULL)
 		return (-1);
 
-	if (text_content)
+	if (text_content != NULL)
 	{
 		for (len = 0; text_content[len];)
 			len++;
